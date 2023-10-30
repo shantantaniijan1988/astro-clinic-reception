@@ -1,0 +1,30 @@
+---
+---
+
+<footer class="footer">
+  <div class="footer__inner">
+    <p class="footer__copy">&copy; 2023 Fictitious Clinic</p>
+  </div>
+</footer>
+
+<style lang="scss">
+  @use "../styles/colors" as *;
+
+  .footer {
+    background-color: $color-bg-light;
+
+    &__inner {
+      width: 768px;
+      max-width: 100%;
+      padding: 0.5rem 1.5rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &__copy {
+      font-size: 0.75rem;
+      text-align: center;
+      letter-spacing: 0.05em;
+    }
+  }
+</style>

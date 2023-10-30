@@ -1,0 +1,51 @@
+---
+const menuItems = [
+  {
+    name: "家族登録",
+    slug: "#!",
+  }, {
+    name: "メール設定",
+    slug: "#!",
+  }, {
+    name: "使い方ガイド",
+    slug: "#!",
+  }, {
+    name: "ご利用規約",
+    slug: "#!",
+  }, {
+    name: "ログアウト",
+    slug: "#!",
+  },
+];
+---
+
+<ul class="navigation-list">
+  {
+    menuItems.map((menuItem) => (
+      <li class="navigation-item"><a class="navigation-item__link" href={ menuItem.slug }>{ menuItem.name }</a></li>
+    ))
+  }
+</ul>
+
+<style lang="scss">
+  @use "../styles/colors" as *;
+
+  .navigation-list {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 0.25rem;
+  }
+
+  .navigation-item {
+    width: calc((100% / 2) - 0.25rem);
+  }
+
+  .navigation-item__link {
+    display: block;
+    padding: 1rem;
+    border: 2px solid $color-gray-light;
+    border-radius: 2px;
+  }
+</style>

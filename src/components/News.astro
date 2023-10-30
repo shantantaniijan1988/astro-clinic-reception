@@ -1,0 +1,36 @@
+---
+---
+
+<section class="news">
+  <div class="news__inner">
+    <h2>架空クリニックからのお知らせです。</h2>
+    <p class="text-danger">熱が37.5℃以上・全身倦怠感があると思われる方は<br />順番予約をされる前にまず0000-00-0000にお電話ください。</p>
+    <p>受診時はマスクの着用をお願いいたします。</p>
+    <p>架空クリニックにおきましても、緊急事態宣言解除後は各学会の指針に従い、<br />継続して必要な予防体制を講じた上で、<br />検査・治療等について必要と判断した場合には<br />従来通り実施いたします。<br />当院ではこれからも十分な検査・治療ができる体制を整え、<br />皆様が安心して受診できるよう努めてまいりますので、ぜひ安心してご来院してください。</p>
+  </div>
+</section>
+
+<style lang="scss">
+  @use "../styles/colors" as *;
+
+  .news__inner {
+    padding: 1rem;
+    border: 2px solid $color-danger;
+    border-radius: 2px;
+
+    h2 {
+      margin-bottom: 1rem;
+      font-size: 1rem;
+      font-weight: 400;
+    }
+
+    p + p {
+      margin-top: 1rem;
+    }
+  }
+
+  .text-danger {
+    color: $color-danger;;
+    font-size: 1.125rem;
+  }
+</style>

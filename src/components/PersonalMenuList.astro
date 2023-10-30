@@ -1,0 +1,49 @@
+---
+const menuItems = [
+  {
+    name: "受付する",
+    slug: "#!",
+  }, {
+    name: "受付確認・キャンセル",
+    slug: "#!",
+  }, {
+    name: "本日の受診状況",
+    slug: "#!",
+  },
+];
+---
+
+<ul class="personal-menu-list">
+  {
+    menuItems.map((menuItem) => (
+      <li class="personal-menu-item"><a class="personal-menu-item__link" href={ menuItem.slug }>{ menuItem.name }</a></li>
+    ))
+  }
+</ul>
+
+<style lang="scss">
+  @use "../styles/colors" as *;
+
+  .personal-menu-item {
+    
+    &__link {
+      display: block;
+      padding: .5rem 1rem;
+      background-color: $color-gray-light;
+      border: 1px solid $color-gray-dark;
+      font-size: 1.25rem;
+    }
+
+    &:first-of-type {
+      .personal-menu-item__link {
+        border-radius: 8px 8px 0 0;
+      }
+    }
+
+    &:last-of-type {
+      .personal-menu-item__link {
+        border-radius: 0 0 8px 8px;
+      }
+    }
+  }
+</style>

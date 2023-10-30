@@ -1,0 +1,33 @@
+---
+import PageLayout from "../layouts/PageLayout.astro";
+import Header from "../components/Header.astro";
+import News from "../components/News.astro";
+import NewsList from "../components/NewsList.astro";
+import PersonalMenuList from "../components/PersonalMenuList.astro";
+import NavigationList from "../components/NavigationList.astro";
+import Footer from "../components/Footer.astro";
+
+const pageStatus = {
+  title: "架空クリニック | オンライン受付",
+  description: "架空クリニックのオンライン受付システムのページです。"
+}
+---
+
+<PageLayout title={ pageStatus.title } description={ pageStatus.description }>
+  <Header />
+  <div class="container">
+    <main class="main-content">
+      <News />
+      <NewsList />
+      <section class="personal-menu section">
+        <h2 class="section-heading">〇〇〇様の受付画面です</h2>
+        <PersonalMenuList />
+      </section>
+      <section class="navigation section">
+        <h2 class="section-heading">その他メニュー</h2>
+        <NavigationList />
+      </section>
+    </main>
+  </div>
+  <Footer />
+</PageLayout>

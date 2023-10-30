@@ -1,0 +1,45 @@
+@use "colors" as *;
+@use "reset" as *;
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.container {
+  width: 100%;
+  background-color: $color-bg-dark;
+}
+
+.main-content {
+  width: 768px;
+  max-width: 100%;
+  padding-top: 0.5rem;
+  padding-left: 1.5rem;
+  padding-bottom: 1rem;
+  padding-right: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: $color-white;
+
+  .section {
+    margin-top: 1rem;
+
+    .personal-menu-list {
+      margin-top: 1rem;
+    }
+
+    .navigation-list {
+      margin-top: 1rem;
+    }
+  }
+}
+
+.section-heading {
+  background-color: $color-info;
+  border-radius: 6px;
+  color: $color-white;
+  font-size: 1.125rem;
+  font-weight: 400;
+  text-align: center;
+  box-shadow: 2px 2px 2px $color-gray-dark;
+}
