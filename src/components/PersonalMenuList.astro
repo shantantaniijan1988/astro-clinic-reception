@@ -24,9 +24,7 @@ const menuItems = [
 <style lang="scss">
   @use "../styles/colors" as *;
 
-  .personal-menu-item {
-    
-    &__link {
+  .personal-menu-item__link {
       display: block;
       padding: .5rem 1rem;
       background-color: $color-gray-light;
@@ -34,16 +32,15 @@ const menuItems = [
       font-size: 1.25rem;
     }
 
-    &:first-of-type {
+    .personal-menu-item:first-of-type {
       .personal-menu-item__link {
         border-radius: 8px 8px 0 0;
       }
     }
 
-    &:last-of-type {
+    .personal-menu-item:last-of-type {
       .personal-menu-item__link {
         border-radius: 0 0 8px 8px;
       }
     }
-  }
 </style>
